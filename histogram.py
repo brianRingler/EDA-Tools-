@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 from EDAVisual import OptionsHist
-from HelperFunctions import HelpFunc
+from HelperFunctions import scale_convert, convert_thousands
 
        
 class Hist(OptionsHist):
