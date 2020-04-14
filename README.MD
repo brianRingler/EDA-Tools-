@@ -33,6 +33,10 @@ Module containing three (3) histograms that allow user to create three different
 2. Histogram with ability to quickly adjust the bins
 3. Histogram with prior functionality, data transformed to logarithmic scale and x-axis labels with non logarithmic values with option to convert to thousands. 
 
+***
+# Testing 
+***
+For testing we used `pytest`. 
 
 ## test_help_func
 
