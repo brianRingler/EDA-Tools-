@@ -31,7 +31,8 @@ class Hist(OptionsHist):
         self.med_line = plt.axvline(np.median(dataframe[col_name]), color = 'y',
                                   linestyle='--', lw = 2, label = 'Median')
         plt.legend(fontsize=14)
-        plt.hist(dataframe[col_name]);
+        plt.hist(dataframe[col_name])
+        plt.show();
         
 
 class HistBins(OptionsHist):
@@ -67,7 +68,8 @@ class HistBins(OptionsHist):
         self.med_line = plt.axvline(np.median(dataframe[col_name]), color = 'y',
                                   linestyle = '--', lw=2, label = 'Median')
         plt.legend(fontsize=14)
-        plt.hist(dataframe[col_name], bins = self.bin_edges);
+        plt.hist(dataframe[col_name], bins = self.bin_edges)
+        plt.show();
         
 
 
@@ -153,7 +155,3 @@ class HistLog10(OptionsHist):
         # set the x-axis to log with base value of 10
         plt.xscale('log')
         plt.show();
-
-        hist_obj_1 = Hist(df, 'score', 'Title Hist Object-1' , 'Bins', 'Counts')
-        print(hist_obj_1)
-        plt.show()
